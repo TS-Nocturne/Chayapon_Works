@@ -67,7 +67,7 @@ export default function HomeVehicleDiscovery({ brands, vehicleCount }: { brands:
                 <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/5 to-white/20" />
                 <div className="market-shell relative z-10 pt-6 text-center sm:pt-10 lg:pt-12">
                     <p className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-700">CHAYAPON WORKS ONLINE STORE</p>
-                    <h1 className="mx-auto mt-2 max-w-4xl break-words px-1 text-[clamp(1.45rem,7vw,3.8rem)] font-black leading-[1.08] tracking-[-0.045em] text-slate-950 sm:px-0">ค้นหารถ บ้าน และอะไหล่ที่ใช่สำหรับคุณ</h1>
+                    <h1 className="mx-auto mt-2 max-w-4xl break-words px-1 text-[1.45rem] font-black leading-[1.08] tracking-[-0.045em] text-slate-950 sm:px-0 sm:text-[2.5rem] md:text-[2.75rem] lg:text-[3.15rem] xl:text-[3.8rem]">ค้นหารถ บ้าน และอะไหล่ที่ใช่สำหรับคุณ</h1>
                     <p className="mt-2 text-sm text-slate-600 sm:mt-3 sm:text-lg">สินค้าคุณภาพที่ Chayapon Works คัดสรรและดูแลให้คุณในที่เดียว</p>
                 </div>
 
@@ -103,7 +103,7 @@ export default function HomeVehicleDiscovery({ brands, vehicleCount }: { brands:
             </section>
 
             <section className="border-b border-slate-200 bg-white">
-                <div className="market-shell flex max-w-full gap-2 overflow-x-auto overscroll-x-contain py-3 [scrollbar-width:none] sm:justify-center sm:gap-4 sm:py-4">
+                <div className="market-shell flex max-w-full justify-start gap-2 overflow-x-auto overscroll-x-contain py-3 [scrollbar-width:none] sm:gap-4 sm:py-4 xl:justify-center">
                     {bodyTypes.map(({ value, label, icon: Icon }) => <Link key={value} href={`/vehicles?bodyType=${value}`} className="group flex min-w-[112px] flex-col items-center gap-2 border-r border-slate-200 px-5 py-2 text-sm font-medium text-slate-700 last:border-r-0 hover:text-blue-700"><Icon className="h-7 w-7 stroke-[1.5] transition-transform group-hover:-translate-y-0.5" />{label}</Link>)}
                     <Link href="/real-estate?propertyType=house" className="group flex min-w-[112px] flex-col items-center gap-2 border-r border-slate-200 px-5 py-2 text-sm font-medium text-slate-700 hover:text-blue-700"><House className="h-7 w-7 stroke-[1.5]" />บ้าน</Link>
                     <Link href="/real-estate?propertyType=condo" className="group flex min-w-[112px] flex-col items-center gap-2 border-r border-slate-200 px-5 py-2 text-sm font-medium text-slate-700 hover:text-blue-700"><Building2 className="h-7 w-7 stroke-[1.5]" />คอนโด</Link>
